@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tiruvannamalai Guide | Hotels & Tourist Spots</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Background Video -->
+  <div class="video-background">
+    <video autoplay muted loop id="bgVideo">
+      <source src="assets/tvm.mp4" type="video/mp4">
+    </video>
+    <div class="video-overlay"></div>
+  </div>
+
+  <!-- Header & Login -->
+  <header>
+    <h1>Explore Tiruvannamalai</h1>
+    <button id="loginBtn" class="btn-login">Login / Sign Up</button>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <div class="hero">
+      <h2>Discover the holy City</h2>
+      <p>Explore top-rated hotels and spiritual destinations</p>
+      <p>PREPARED BY S.B.JAIAKASSH</p>
+      <div class="cta-buttons">
+        <a href="#hotels" class="btn">Hotels by Reviews</a>
+        <a href="#spots" class="btn">Tourist Spots</a>
+      </div>
+    </div>
+
+    <!-- Hotels Section -->
+    <section id="hotels" class="section">
+      <h2><i class="fas fa-hotel"></i> Best Hotels (Google Reviews)</h2>
+      <div class="hotels-container" id="hotelsList">
+        <!-- Filled by JavaScript -->
+      </div>
+    </section>
+
+    <!-- Tourist Spots Section -->
+    <section id="spots" class="section">
+      <h2><i class="fas fa-map-marked-alt"></i> Must-Visit Spots</h2>
+      <div class="spots-container" id="spotsList">
+        <!-- Filled by JavaScript -->
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <h2><i class="fas fa-envelope"></i> Contact Us</h2>
+      <form id="contactForm" class="contact-form">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="contactEmail" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Login Modal -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Login / Sign Up</h2>
+      <form id="loginForm">
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button type="submit" class="btn">Login</button>
+      </form>
+      <p id="toggleSignup">Don't have an account? <a href="#">Sign up</a></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
